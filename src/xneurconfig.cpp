@@ -473,9 +473,8 @@ QMap <QString, QString> kXneurApp::xNeurConfig::hot_get_list_command_hotkeys()
 
     QString hot_key;
     QMap <QString, QString> tblHotKey;
-    //TODO почему-то у меня в файле xnconfig.h переменная  MAX_HOTKEYS 24 а должна быть 23
-    //for(int i=0;i<MAX_HOTKEYS; ++i)
-    for(int i=0;i<lstCommand_hotKey.size(); ++i)
+    int sz = lstCommand_hotKey.size();
+    for(int i=0;i<sz; ++i)
     {
         if(xconfig->hotkeys[i].key!=NULL)
         {

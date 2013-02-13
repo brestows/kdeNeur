@@ -73,6 +73,7 @@ SHAREDIR = $$DATADIR/$${TARGET}
  }
 
 DEFINES += COUNTRY_FLAGS=\\\"$${SHAREDIR}/pixmaps\\\" SHAREDIR=\\\"$${SHAREDIR}\\\"
+DEFINES += NDEBUG
 
 INSTALLS =  target \
             flags \

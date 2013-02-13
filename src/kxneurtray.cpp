@@ -47,7 +47,6 @@ void kXneurApp::kXneurTray::createActions(QMap<QString, QMap<QString, QString> >
   show_journal = new QAction(tr("View log..."), this);
   connect(show_journal,SIGNAL(triggered()), SLOT(showJournal()));
 
-  //TODO: add dynamic user action from file settings
   if(add_user_action_menu_from_file(lstAct))
   {
       user_action = new QAction(tr("User Action"), this);
@@ -62,7 +61,6 @@ void kXneurApp::kXneurTray::createActions(QMap<QString, QMap<QString, QString> >
   start_stop_neur = new QAction(tr("Start daemon"), this);
   start_stop_neur->setData(QVariant(false));
   connect(start_stop_neur, SIGNAL(triggered()), SLOT(startStopNeur()));
-
   trayMenu->addAction(start_stop_neur);
   trayMenu->addSeparator();
   if(user_action!=NULL)
@@ -114,6 +112,7 @@ void kXneurApp::kXneurTray::setTrayIconFlags(QString lang)
         }
           break;
     case TEXT:
+        //TODO: paint text in tray
 //        break;
     case ICON:
         trayIcon->setIcon(QIcon(":/icons/kdeneur.png"));
@@ -209,7 +208,7 @@ bool kXneurApp::kXneurTray::add_user_action_menu_from_file(QMap<QString, QMap<QS
         return false;
     }
 }
-
+//выполняем пользовательское действие
 void kXneurApp::kXneurTray::runUserActions()
 {
     QAction *usrAct = (QAction *)sender();
@@ -218,6 +217,7 @@ void kXneurApp::kXneurTray::runUserActions()
     {
         QMessageBox::information(0, tr("Error: Execute Actions"), tr(prc.errorString().toUtf8().data()), QMessageBox::Ok);
         qDebug() << prc.errorString();
+        qDebug() << usrAct->data().toString();
     }
 }
 
