@@ -27,10 +27,10 @@ int main(int argc, char *argv[])
   QTextCodec::setCodecForTr(codec);
   QTextCodec::setCodecForCStrings(codec);
   QTextCodec::setCodecForLocale(codec);
-#ifdef NDEBUG
+#ifdef QT_NO_DEBUG
   KConfig conf("kdeneurrc");
   sleep(conf.group("Properties").readEntry("WaiTime", 0));
-  qDebug() << "Release";
+  qDebug() << "RELEASE";
 #endif
   kXneurApp::kXneur neur(argc, argv);
   neur.setApplicationName("kdeNeur");

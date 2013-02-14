@@ -24,7 +24,7 @@ SOURCES += \
 
 INCLUDEPATH += /usr/include
 
-LIBS += -lX11 -lkdeui -lkdecore -lxneur -lxnconfig
+LIBS += -lX11 -lkdeui -lkdecore -lxneur -lxnconfig -lplasma
 
 HEADERS += \
     kxneurtray.h \
@@ -73,7 +73,6 @@ SHAREDIR = $$DATADIR/$${TARGET}
  }
 
 DEFINES += COUNTRY_FLAGS=\\\"$${SHAREDIR}/pixmaps\\\" SHAREDIR=\\\"$${SHAREDIR}\\\"
-DEFINES += NDEBUG
 
 INSTALLS =  target \
             flags \

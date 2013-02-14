@@ -12,13 +12,17 @@
 #include <QUrl>
 #include <QDesktopServices>
 #include <QTranslator>
+#include <QFont>
+#include <QPoint>
+#include <QColor>
 
 //Kde header files
 #include <ktoolinvocation.h>
 //#include <kconfiggroup.h>
 #include <kconfig.h>
 #include <kconfiggroup.h>
-
+#include <plasma/theme.h>
+#include <plasma/paintutils.h>
 kXneurApp::kXneurTray::kXneurTray( QMap<QString, QMap<QString, QString> > listActions,QObject *parent): QObject(parent)
 {
   createActions(listActions);
@@ -96,6 +100,7 @@ void kXneurApp::kXneurTray::setTrayIconFlags(QString lang)
         }
         else
         {
+            qDebug() << tr(QString("ERROR: Not Found %1").arg(path).toAscii());
             trayIcon->setIcon(QIcon(":/noLayout"));
         }
         break;
@@ -108,12 +113,22 @@ void kXneurApp::kXneurTray::setTrayIconFlags(QString lang)
         }
         else
         {
+            qDebug() << tr(QString("ERROR: Not Found %1").arg(path).toAscii());
             trayIcon->setIcon(QIcon(":/noLayout"));
         }
           break;
     case TEXT:
-        //TODO: paint text in tray
-//        break;
+    {
+        //TODO: Add userSettings for text in tray
+        QFont font;
+        font.setFamily("Ubuntu");
+        font.setBold(true);
+        font.setPointSize(18);
+        QColor 	textColor = Plasma::Theme::defaultTheme()->color(Plasma::Theme::TextColor);
+        QColor 	shadowColor = Plasma::Theme::defaultTheme()->color(Plasma::Theme::BackgroundColor);
+        QPoint 	offset = QPoint(0, 0);
+        trayIcon->setIcon(QIcon(Plasma::PaintUtils::shadowText(lang, font, textColor, shadowColor, offset, 0)));
+    }break;
     case ICON:
         trayIcon->setIcon(QIcon(":/icons/kdeneur.png"));
         break;
