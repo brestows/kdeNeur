@@ -13,6 +13,7 @@
 #include <QDesktopServices>
 #include <QMap>
 
+
 kXneurApp::frmSettings::frmSettings(QWidget *parent, kXneurApp::xNeurConfig *cfg) :  QDialog(parent),  ui(new Ui::frmSettings)
 {
   ui->setupUi(this);
@@ -24,6 +25,7 @@ kXneurApp::frmSettings::frmSettings(QWidget *parent, kXneurApp::xNeurConfig *cfg
   settintgGrid();
   createConnect();
   readSettingsKdeNeur();
+
 }
 
 kXneurApp::frmSettings::~frmSettings()
@@ -192,6 +194,12 @@ void kXneurApp::frmSettings::readSettingsKdeNeur()
         ui->tabProperties_grpFolderIcon->setEnabled(true);
         ui->tabProperties_txtPathIconTray->setText(properties.readEntry("Iconpath",""));
     }
+    ui->tabProperties_spSizeFont->setValue(properties.readEntry("FontSize", 16));
+    int curInd = ui->tabProperties_cmbListFont->findText(properties.readEntry("FontName", "Ubuntu Mono"));
+    ui->tabProperties_cmbListFont->setCurrentIndex(curInd);
+
+    QColor color(properties.readEntry("FontColor", "#000000"));
+    ui->tabProperties_colorFont->setColor(color);
 }
 
 void kXneurApp::frmSettings::readSettingsNeur()
@@ -334,6 +342,9 @@ void kXneurApp::frmSettings::createConnect()
   connect(ui->tabProperties_cmdBrowseIconTray, SIGNAL(clicked()),SLOT(BrowseIconTray()));
   connect(ui->tabProperties_chkEnableAutostart, SIGNAL(clicked(bool)), SLOT(chekAutostart(bool)));
   connect(ui->tabProperties_spbDelayStartApp, SIGNAL(valueChanged(int)), SLOT(delayStartApp(int)));
+  connect(ui->tabProperties_cmbListFont, SIGNAL(currentIndexChanged(QString)), SLOT(setCurentFont(QString)));
+  connect(ui->tabProperties_spSizeFont, SIGNAL(valueChanged(int)), SLOT(setFontSize(int)));
+  connect(ui->tabProperties_colorFont, SIGNAL(changed(QColor)), SLOT(setFontColor(QColor));
 }
 
 void kXneurApp::frmSettings::RecoverKeyboardCommand()
@@ -659,7 +670,6 @@ void kXneurApp::frmSettings::notif_get_list_action_sound(QMap<QString, QMultiMap
         itmNoEdit->setText(i.key());
         itmNoEdit->setFlags(Qt::ItemIsEnabled | Qt::ItemIsSelectable);
         ui->tabSound_lstListSound->setItem(p,0,itmNoEdit);
-        //ui->tabSound_lstListSound->setItem(p,0, new QTableWidgetItem(i.key()));
         tmpMap = i.value();
         QMultiMap<bool, QString>::const_iterator j = tmpMap.constBegin();
         while( j!= tmpMap.constEnd())
@@ -674,7 +684,7 @@ void kXneurApp::frmSettings::notif_get_list_action_sound(QMap<QString, QMultiMap
         ++p;++i;
     }
 }
-
+//TODO: check function save actiond sound
 //QMap<QString, QMultiMap<bool, QString> >  kXneurApp::frmSettings::notif_save_list_action_sound()
 //{
 //    QMap<QString, QMultiMap<bool, QString> > sound;
@@ -725,6 +735,7 @@ void kXneurApp::frmSettings::notif_get_list_action_osd(QMap<QString, QMultiMap<b
         ++p;++i;
     }
 }
+//TODO: check function save actiond OSD
 //QMap<QString, QMultiMap<bool, QString> > kXneurApp::frmSettings::notif_save_list_action_osd()
 //{
 
@@ -1021,3 +1032,23 @@ QMap<QString, QMultiMap<bool, QString> > kXneurApp::frmSettings::get_lget_from_n
     }
     return mapList;
 }
+
+void kXneurApp::frmSettings::setFontColor(QColor color)
+{
+    properties.writeEntry("FontColor", color.name());
+}
+
+void kXneurApp::frmSettings::setFontSize(int sz)
+{
+    properties.writeEntry("FontSize", sz);
+}
+
+void kXneurApp::frmSettings::setCurentFont(QString font)
+{
+    properties.writeEntry("FontName", font);
+}
+
+
+
+
+
