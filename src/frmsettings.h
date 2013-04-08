@@ -78,10 +78,6 @@ namespace kXneurApp
     void RecoverKeyboardCommand();
     void EditKeyboardCommand();
     void TypeIconTray(int);
-    void setCurentFont(QString);
-    void setFontSize(int);
-    void setFontColor(QColor);
-
     //void TypeEngine(int);
     void BrowseIconTray();
     void chekAutostart(bool);

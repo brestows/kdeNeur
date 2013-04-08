@@ -206,10 +206,7 @@ void kXneurApp::xNeurConfig::test(QString str)
     qDebug()<<str;
 }
 
-//void kXneurApp::xNeurConfig::delayStartApp(int time)
-//{
-//    xconfig->
-//}
+
 
 /*================================= tab General =================================*/
 void kXneurApp::xNeurConfig::gen_main_save_manual_switch(bool stat)
@@ -256,9 +253,19 @@ void kXneurApp::xNeurConfig::gen_main_save_check_lang(bool stat)
     xconfig->check_lang_on_process=stat;
 }
 
+void kXneurApp::xNeurConfig::gen_main_save_check_similar(bool stat)
+{
+    xconfig->check_similar_words=stat;
+}
+
 bool kXneurApp::xNeurConfig::gen_main_get_check_lang()
 {
     return xconfig->check_lang_on_process ;
+}
+
+bool kXneurApp::xNeurConfig::gen_main_get_check_similar()
+{
+    return xconfig->check_similar_words ;
 }
 
 void kXneurApp::xNeurConfig::gen_tipo_save_correct_caps(bool stat)
@@ -379,6 +386,16 @@ void kXneurApp::xNeurConfig::gen_tipo_save_correct_dash(bool stat)
 bool kXneurApp::xNeurConfig::gen_tipo_get_correct_dash()
 {
     return xconfig->correct_dash_with_emdash;
+}
+
+void kXneurApp::xNeurConfig::gen_tipo_save_correct_misprint(bool stat)
+{
+    xconfig->correct_misprint = stat;
+}
+
+bool kXneurApp::xNeurConfig::gen_tipo_get_correct_misprint()
+{
+    return xconfig->correct_misprint;
 }
 
 /*================================= tab Layout =================================*/
@@ -532,8 +549,10 @@ QMap<QString, QMap<QString, QString> >  kXneurApp::xNeurConfig::hot_get_list_use
     QMap<QString, QMap<QString, QString> > lstUserAction;
     QMap<QString, QString> lstNameCmd;
     lstModifer << "Shift" << "Control" << "Alt" << "Super";
+    //FIXME: actions_count allways return  zero (0)
     for (int action = 0; action < xconfig->actions_count; action++)
     {
+        qDebug() << "ACTIONS " << action;
         for (int i = 0; i < TOTAL_MODIFER; ++i)
         {
                 if ((xconfig->actions[action].hotkey.modifiers & (0x1 << i)) == 0)
@@ -542,6 +561,7 @@ QMap<QString, QMap<QString, QString> >  kXneurApp::xNeurConfig::hot_get_list_use
                 }
 
                text += QString("%1+").arg(lstModifer.at(i));
+               test(text);
         }
         text += QString("%1").arg(xconfig->actions[action].hotkey.key);
 

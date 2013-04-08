@@ -13,7 +13,6 @@
 #include <QDesktopServices>
 #include <QMap>
 
-
 kXneurApp::frmSettings::frmSettings(QWidget *parent, kXneurApp::xNeurConfig *cfg) :  QDialog(parent),  ui(new Ui::frmSettings)
 {
   ui->setupUi(this);
@@ -25,7 +24,6 @@ kXneurApp::frmSettings::frmSettings(QWidget *parent, kXneurApp::xNeurConfig *cfg
   settintgGrid();
   createConnect();
   readSettingsKdeNeur();
-
 }
 
 kXneurApp::frmSettings::~frmSettings()
@@ -43,6 +41,7 @@ void kXneurApp::frmSettings::saveSettingsNeur()
     cfgNeur->gen_main_save_keep_select(ui->chkGenMain_KeepSelect->isChecked());
     cfgNeur->gen_main_save_rotate_layout(ui->chkGenMain_RotateLayout->isChecked());
     cfgNeur->gen_main_save_check_lang(ui->chkGenMain_CheckLang->isChecked());
+    cfgNeur->gen_main_save_check_similar(ui->chkGenMain_CheckSimilar->isChecked());
     cfgNeur->gen_tipo_save_correct_caps(ui->chkGenTipograph_CeorrectCAPS->isChecked());
     cfgNeur->gen_tipo_save_disable_caps(ui->chkGenTipograph_DisableCaps->isChecked());
     cfgNeur->gen_tipo_save_correct_two_caps(ui->chkGenTipograph_CorrectTwoCaps->isChecked());
@@ -55,7 +54,7 @@ void kXneurApp::frmSettings::saveSettingsNeur()
     cfgNeur->gen_tipo_save_correct_r(ui->chkGenTipograph_Correct_r_->isChecked());
     cfgNeur->gen_tipo_save_correct_three_point(ui->chkGenTipograph_Correct_Three_Point->isChecked());
     cfgNeur->gen_tipo_save_correct_dash(ui->chkGenTipograph_CorrectDash->isChecked());
-
+    cfgNeur->gen_tipo_save_correct_misprint(ui->chkGenTipograph_Correct_Misprint->isChecked());
 
     //tab Layout
     cfgNeur->lay_save_number_layout(ui->Layout_spbLayoutNumber->value()-1);
@@ -84,7 +83,7 @@ void kXneurApp::frmSettings::saveSettingsNeur()
     cfgNeur->notif_save_set_font_osd(ui->tabOSD_txtFontOSD->text());
     cfgNeur->notif_save_enable_show_popup_msg(ui->tabPopupMessage_chkShowPopupMessage->isChecked());
     cfgNeur->notif_save_interval_popup_msg(ui->tabPopupMessage_spbIntervalPopup->value());
-
+    //save list actions (sounf osd popup msg)
     cfgNeur->notif_save_list_action_sound(get_lget_from_notif_widget(ui->tabSound_lstListSound));
     cfgNeur->notif_save_list_action_osd(get_lget_from_notif_widget(ui->tabOSD_lstListOSD));
     cfgNeur->notif_save_list_action_popup_msg(get_lget_from_notif_widget(ui->tabPopupMessage_lstListPopupMessage));
@@ -194,12 +193,6 @@ void kXneurApp::frmSettings::readSettingsKdeNeur()
         ui->tabProperties_grpFolderIcon->setEnabled(true);
         ui->tabProperties_txtPathIconTray->setText(properties.readEntry("Iconpath",""));
     }
-    ui->tabProperties_spSizeFont->setValue(properties.readEntry("FontSize", 16));
-    int curInd = ui->tabProperties_cmbListFont->findText(properties.readEntry("FontName", "Ubuntu Mono"));
-    ui->tabProperties_cmbListFont->setCurrentIndex(curInd);
-
-    QColor color(properties.readEntry("FontColor", "#000000"));
-    ui->tabProperties_colorFont->setColor(color);
 }
 
 void kXneurApp::frmSettings::readSettingsNeur()
@@ -211,6 +204,7 @@ void kXneurApp::frmSettings::readSettingsNeur()
     ui->chkGenMain_KeepSelect->setChecked(cfgNeur->gen_main_get_keep_select());
     ui->chkGenMain_RotateLayout->setChecked(cfgNeur->gen_main_get_rotate_layout());
     ui->chkGenMain_CheckLang->setChecked(cfgNeur->gen_main_get_check_lang());
+    ui->chkGenMain_CheckSimilar->setChecked(cfgNeur->gen_main_get_check_similar());
     ui->chkGenTipograph_CeorrectCAPS->setChecked(cfgNeur->gen_tipo_get_correct_caps());
     ui->chkGenTipograph_DisableCaps->setChecked(cfgNeur->gen_tipo_get_disable_caps());
     ui->chkGenTipograph_CorrectTwoCaps->setChecked(cfgNeur->gen_tipo_get_correct_two_caps());
@@ -223,6 +217,7 @@ void kXneurApp::frmSettings::readSettingsNeur()
     ui->chkGenTipograph_Correct_r_->setChecked(cfgNeur->gen_tipo_get_correct_r());
     ui->chkGenTipograph_CorrectDash->setChecked(cfgNeur->gen_tipo_get_correct_dash());
     ui->chkGenTipograph_Correct_Three_Point->setChecked(cfgNeur->gen_tipo_get_correct_three_point());
+    ui->chkGenTipograph_Correct_Misprint->setChecked(cfgNeur->gen_tipo_get_correct_misprint());
 
     //tab Layout
     ui->Layout_spbLayoutNumber->setValue(cfgNeur->lay_get_number_layout());
@@ -342,9 +337,6 @@ void kXneurApp::frmSettings::createConnect()
   connect(ui->tabProperties_cmdBrowseIconTray, SIGNAL(clicked()),SLOT(BrowseIconTray()));
   connect(ui->tabProperties_chkEnableAutostart, SIGNAL(clicked(bool)), SLOT(chekAutostart(bool)));
   connect(ui->tabProperties_spbDelayStartApp, SIGNAL(valueChanged(int)), SLOT(delayStartApp(int)));
-  connect(ui->tabProperties_cmbListFont, SIGNAL(currentIndexChanged(QString)), SLOT(setCurentFont(QString)));
-  connect(ui->tabProperties_spSizeFont, SIGNAL(valueChanged(int)), SLOT(setFontSize(int)));
-  connect(ui->tabProperties_colorFont, SIGNAL(changed(QColor)), SLOT(setFontColor(QColor));
 }
 
 void kXneurApp::frmSettings::RecoverKeyboardCommand()
@@ -670,6 +662,7 @@ void kXneurApp::frmSettings::notif_get_list_action_sound(QMap<QString, QMultiMap
         itmNoEdit->setText(i.key());
         itmNoEdit->setFlags(Qt::ItemIsEnabled | Qt::ItemIsSelectable);
         ui->tabSound_lstListSound->setItem(p,0,itmNoEdit);
+        //ui->tabSound_lstListSound->setItem(p,0, new QTableWidgetItem(i.key()));
         tmpMap = i.value();
         QMultiMap<bool, QString>::const_iterator j = tmpMap.constBegin();
         while( j!= tmpMap.constEnd())
@@ -684,23 +677,6 @@ void kXneurApp::frmSettings::notif_get_list_action_sound(QMap<QString, QMultiMap
         ++p;++i;
     }
 }
-//TODO: check function save actiond sound
-//QMap<QString, QMultiMap<bool, QString> >  kXneurApp::frmSettings::notif_save_list_action_sound()
-//{
-//    QMap<QString, QMultiMap<bool, QString> > sound;
-//    QMultiMap<bool, QString> tmpMap;
-
-//    for (int i=0; i< ui->tabSound_lstListSound->rowCount();++i)
-//    {
-//        if (ui->tabSound_lstListSound->item(i,2)->checkState()==Qt::Unchecked)
-//            {tmpMap.insert(false, ui->tabSound_lstListSound->item(i,1)->text());}
-//        else
-//            {tmpMap.insert(true, ui->tabSound_lstListSound->item(i,1)->text());}
-//        sound.insert(ui->tabSound_lstListSound->item(i,0)->text(),tmpMap);
-//        tmpMap.clear();
-//    }
-//    return sound;
-//}
 
 void kXneurApp::frmSettings::notif_get_list_action_osd(QMap<QString, QMultiMap<bool, QString> > lstActions)
 {
@@ -735,24 +711,6 @@ void kXneurApp::frmSettings::notif_get_list_action_osd(QMap<QString, QMultiMap<b
         ++p;++i;
     }
 }
-//TODO: check function save actiond OSD
-//QMap<QString, QMultiMap<bool, QString> > kXneurApp::frmSettings::notif_save_list_action_osd()
-//{
-
-//    QMap<QString, QMultiMap<bool, QString> > osd;
-//    QMultiMap<bool, QString> tmpMap;
-
-//    for (int i=0; i< ui->tabSound_lstListSound->rowCount();++i)
-//    {
-//        if (ui->tabSound_lstListSound->item(i,2)->checkState()==Qt::Unchecked)
-//            {tmpMap.insert(false, ui->tabSound_lstListSound->item(i,1)->text());}
-//        else
-//            {tmpMap.insert(true, ui->tabSound_lstListSound->item(i,1)->text());}
-//        osd.insert(ui->tabSound_lstListSound->item(i,0)->text(),tmpMap);
-//        tmpMap.clear();
-//    }
-//    return osd;
-//}
 
 void kXneurApp::frmSettings::notif_get_list_action_popup(QMap<QString, QMultiMap<bool, QString> > lstActions)
 {
@@ -1032,23 +990,3 @@ QMap<QString, QMultiMap<bool, QString> > kXneurApp::frmSettings::get_lget_from_n
     }
     return mapList;
 }
-
-void kXneurApp::frmSettings::setFontColor(QColor color)
-{
-    properties.writeEntry("FontColor", color.name());
-}
-
-void kXneurApp::frmSettings::setFontSize(int sz)
-{
-    properties.writeEntry("FontSize", sz);
-}
-
-void kXneurApp::frmSettings::setCurentFont(QString font)
-{
-    properties.writeEntry("FontName", font);
-}
-
-
-
-
-

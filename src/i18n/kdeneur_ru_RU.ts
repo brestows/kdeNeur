@@ -158,17 +158,17 @@
         <translation>Комбинация клавиш:</translation>
     </message>
     <message>
-        <location filename="../adduseraction.ui" line="84"/>
+        <location filename="../adduseraction.ui" line="87"/>
         <source>User action:</source>
         <translation>Пользовательское действие:</translation>
     </message>
     <message>
-        <location filename="../adduseraction.ui" line="125"/>
+        <location filename="../adduseraction.ui" line="128"/>
         <source>Save</source>
         <translation>Сохранить</translation>
     </message>
     <message>
-        <location filename="../adduseraction.ui" line="132"/>
+        <location filename="../adduseraction.ui" line="135"/>
         <source>Cancel</source>
         <translation>Отмена</translation>
     </message>
@@ -313,245 +313,259 @@ p, li { white-space: pre-wrap; }
         <translation>Проверять язык при вводе</translation>
     </message>
     <message>
-        <location filename="../frmsettings.ui" line="112"/>
+        <location filename="../frmsettings.ui" line="96"/>
+        <source>Check similar words</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../frmsettings.ui" line="119"/>
         <source>Tipographics</source>
         <translation>Типографика</translation>
     </message>
     <message>
-        <location filename="../frmsettings.ui" line="120"/>
+        <location filename="../frmsettings.ui" line="127"/>
         <source>Correct aCCIDENTAL caps</source>
         <translation>Исправление сЛУЧАЙНОГО CapsLock</translation>
     </message>
     <message>
-        <location filename="../frmsettings.ui" line="127"/>
+        <location filename="../frmsettings.ui" line="134"/>
         <source>Disable CapsLock use</source>
         <translation>Отключение кнопки CapsLock</translation>
     </message>
     <message>
-        <location filename="../frmsettings.ui" line="134"/>
+        <location filename="../frmsettings.ui" line="141"/>
         <source>Correct TWo INitial caps</source>
         <translation>Исправление двух ПРописных букв</translation>
     </message>
     <message>
-        <location filename="../frmsettings.ui" line="141"/>
+        <location filename="../frmsettings.ui" line="148"/>
         <source>Correct spaces with punctuation</source>
         <translation>Исправление пробелов со знаками пунктуации</translation>
     </message>
-    <message>
-        <location filename="../frmsettings.ui" line="148"/>
+    <message utf8="true">
+        <location filename="../frmsettings.ui" line="155"/>
         <source>Сorrect small letter to capital letter after dot</source>
         <translation>Исправление строчной буквы на прописную после точки</translation>
     </message>
-    <message>
-        <location filename="../frmsettings.ui" line="155"/>
+    <message utf8="true">
+        <location filename="../frmsettings.ui" line="162"/>
         <source>Сorrect two space with a comma and a space</source>
         <translation>справление двух пробелов на запятую и пробел</translation>
     </message>
-    <message>
-        <location filename="../frmsettings.ui" line="162"/>
+    <message utf8="true">
+        <location filename="../frmsettings.ui" line="169"/>
         <source>Сorrect two minus with a dash</source>
         <translation>Исправление двух минусов на тире</translation>
     </message>
-    <message>
-        <location filename="../frmsettings.ui" line="169"/>
+    <message utf8="true">
+        <location filename="../frmsettings.ui" line="176"/>
         <source>Сorrect dash with a emdash</source>
         <translation>Исправление тире на длинное тире</translation>
     </message>
-    <message>
-        <location filename="../frmsettings.ui" line="176"/>
+    <message utf8="true">
+        <location filename="../frmsettings.ui" line="183"/>
         <source>Сorrect (c) with a copyright sign</source>
         <translation>Исправление (с) на знак копирайта</translation>
     </message>
-    <message>
-        <location filename="../frmsettings.ui" line="183"/>
+    <message utf8="true">
+        <location filename="../frmsettings.ui" line="190"/>
         <source>Сorrect (tm) with a trademark sign</source>
         <translation>Исправление (tm) на знак торговой марки</translation>
     </message>
-    <message>
-        <location filename="../frmsettings.ui" line="190"/>
+    <message utf8="true">
+        <location filename="../frmsettings.ui" line="197"/>
         <source>Сorrect (r) with a registered sign</source>
         <translation>Исправление (r) на знак регистрации</translation>
     </message>
-    <message>
-        <location filename="../frmsettings.ui" line="197"/>
+    <message utf8="true">
+        <location filename="../frmsettings.ui" line="204"/>
         <source>Сorrect three points with a ellipsis sign</source>
         <translation>Исправление трёх точек на знак многоточия</translation>
     </message>
     <message>
-        <location filename="../frmsettings.ui" line="227"/>
+        <location filename="../frmsettings.ui" line="211"/>
+        <source>Correct misprint</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../frmsettings.ui" line="241"/>
         <source>Layouts</source>
         <translation>Раскладки</translation>
     </message>
     <message>
-        <location filename="../frmsettings.ui" line="262"/>
+        <location filename="../frmsettings.ui" line="276"/>
         <source>Initial layout number:</source>
         <translation>Номер раскладки по умолчанию: </translation>
     </message>
     <message>
-        <location filename="../frmsettings.ui" line="309"/>
+        <location filename="../frmsettings.ui" line="323"/>
         <source>Rules change...</source>
         <translation>Правила переключения...</translation>
     </message>
     <message>
-        <location filename="../frmsettings.ui" line="331"/>
+        <location filename="../frmsettings.ui" line="345"/>
         <source>Remember keyboard layout for each application instance</source>
         <translation>Запоминать раскладку отдельно для каждой копии приложения</translation>
     </message>
     <message>
-        <location filename="../frmsettings.ui" line="338"/>
+        <location filename="../frmsettings.ui" line="352"/>
         <source>Exceptions (One keyboard layout for all application instances)</source>
         <translation>Исключения (одна раскладка для всех копий приложения)</translation>
     </message>
     <message>
-        <location filename="../frmsettings.ui" line="362"/>
-        <location filename="../frmsettings.ui" line="457"/>
-        <location filename="../frmsettings.ui" line="554"/>
-        <location filename="../frmsettings.ui" line="638"/>
-        <location filename="../frmsettings.ui" line="708"/>
-        <location filename="../frmsettings.ui" line="775"/>
-        <location filename="../frmsettings.ui" line="1108"/>
+        <location filename="../frmsettings.ui" line="376"/>
+        <location filename="../frmsettings.ui" line="471"/>
+        <location filename="../frmsettings.ui" line="568"/>
+        <location filename="../frmsettings.ui" line="652"/>
+        <location filename="../frmsettings.ui" line="722"/>
+        <location filename="../frmsettings.ui" line="789"/>
+        <location filename="../frmsettings.ui" line="1122"/>
         <source>Add</source>
         <translation>Добавить</translation>
     </message>
     <message>
-        <location filename="../frmsettings.ui" line="369"/>
-        <location filename="../frmsettings.ui" line="471"/>
-        <location filename="../frmsettings.ui" line="561"/>
-        <location filename="../frmsettings.ui" line="651"/>
-        <location filename="../frmsettings.ui" line="721"/>
-        <location filename="../frmsettings.ui" line="788"/>
-        <location filename="../frmsettings.ui" line="1115"/>
+        <location filename="../frmsettings.ui" line="383"/>
+        <location filename="../frmsettings.ui" line="485"/>
+        <location filename="../frmsettings.ui" line="575"/>
+        <location filename="../frmsettings.ui" line="665"/>
+        <location filename="../frmsettings.ui" line="735"/>
+        <location filename="../frmsettings.ui" line="802"/>
+        <location filename="../frmsettings.ui" line="1129"/>
         <source>Remove</source>
         <translation>Удалить</translation>
     </message>
     <message>
-        <location filename="../frmsettings.ui" line="385"/>
-        <location filename="../frmsettings.ui" line="397"/>
-        <location filename="../frmsettings.ui" line="442"/>
+        <location filename="../frmsettings.ui" line="399"/>
+        <location filename="../frmsettings.ui" line="411"/>
+        <location filename="../frmsettings.ui" line="456"/>
         <source>HotKeys</source>
         <translation>Комбинации клавиш</translation>
     </message>
     <message>
-        <location filename="../frmsettings.ui" line="392"/>
+        <location filename="../frmsettings.ui" line="406"/>
         <source>Actions</source>
         <translation>Действия</translation>
     </message>
     <message>
-        <location filename="../frmsettings.ui" line="407"/>
-        <location filename="../frmsettings.ui" line="464"/>
-        <location filename="../frmsettings.ui" line="885"/>
-        <location filename="../frmsettings.ui" line="1889"/>
+        <location filename="../frmsettings.ui" line="421"/>
+        <location filename="../frmsettings.ui" line="478"/>
+        <location filename="../frmsettings.ui" line="899"/>
+        <location filename="../frmsettings.ui" line="1908"/>
         <source>Edit</source>
         <translation>Изменить</translation>
     </message>
     <message>
-        <location filename="../frmsettings.ui" line="414"/>
+        <location filename="../frmsettings.ui" line="428"/>
         <source>Clear</source>
         <translation>Очистить</translation>
     </message>
     <message>
-        <location filename="../frmsettings.ui" line="437"/>
-        <location filename="../frmsettings.ui" line="914"/>
-        <location filename="../frmsettings.ui" line="978"/>
-        <location filename="../frmsettings.ui" line="1053"/>
+        <location filename="../frmsettings.ui" line="451"/>
+        <location filename="../frmsettings.ui" line="928"/>
+        <location filename="../frmsettings.ui" line="992"/>
+        <location filename="../frmsettings.ui" line="1067"/>
         <source>Action</source>
         <translation>Действие</translation>
     </message>
     <message>
-        <location filename="../frmsettings.ui" line="447"/>
+        <location filename="../frmsettings.ui" line="461"/>
         <source>User Actions</source>
         <translation>Пользовательские действия</translation>
     </message>
     <message>
-        <location filename="../frmsettings.ui" line="497"/>
+        <location filename="../frmsettings.ui" line="511"/>
         <source>Autocompletion</source>
         <translation>Автодополнение</translation>
     </message>
     <message>
-        <location filename="../frmsettings.ui" line="573"/>
         <source>Enable pattern mining and recognition (autocompletion)</source>
-        <translation>Включить запоминание паттернов и автодополнение</translation>
+        <translation type="obsolete">Включить запоминание паттернов и автодополнение</translation>
     </message>
     <message>
-        <location filename="../frmsettings.ui" line="503"/>
+        <location filename="../frmsettings.ui" line="517"/>
         <source>Add space after autocompletion</source>
         <translation>Добавлять пробел после автодополнения</translation>
     </message>
     <message>
-        <location filename="../frmsettings.ui" line="520"/>
+        <location filename="../frmsettings.ui" line="534"/>
         <source>Disable the autocompletion for these applications</source>
         <translation>Отключить автодополнение для этих приложений</translation>
     </message>
     <message>
-        <location filename="../frmsettings.ui" line="584"/>
+        <location filename="../frmsettings.ui" line="587"/>
+        <source>Enable autocompletion</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../frmsettings.ui" line="598"/>
         <source>Applications</source>
         <translation>Приложения</translation>
     </message>
     <message>
-        <location filename="../frmsettings.ui" line="602"/>
+        <location filename="../frmsettings.ui" line="616"/>
         <source>Ignore these applications</source>
         <translation>Не обрабатывать эти приложения</translation>
     </message>
     <message>
-        <location filename="../frmsettings.ui" line="672"/>
+        <location filename="../frmsettings.ui" line="686"/>
         <source>Force automatic mode for these applications</source>
         <translation>Принудительный автоматический режим для этих приложений</translation>
     </message>
     <message>
-        <location filename="../frmsettings.ui" line="742"/>
+        <location filename="../frmsettings.ui" line="756"/>
         <source>Force manual mode for these applications</source>
         <translation>Принудительный ручной режим для этих приложений</translation>
     </message>
     <message>
-        <location filename="../frmsettings.ui" line="814"/>
+        <location filename="../frmsettings.ui" line="828"/>
         <source>Notifications</source>
         <translation>Уведомления</translation>
     </message>
     <message>
-        <location filename="../frmsettings.ui" line="824"/>
+        <location filename="../frmsettings.ui" line="838"/>
         <source>Sounds</source>
         <translation>Звуки</translation>
     </message>
     <message>
-        <location filename="../frmsettings.ui" line="830"/>
+        <location filename="../frmsettings.ui" line="844"/>
         <source>Enable sounds</source>
         <translation>Проигрывать звуки</translation>
     </message>
     <message>
-        <location filename="../frmsettings.ui" line="839"/>
+        <location filename="../frmsettings.ui" line="853"/>
         <source>Sound volume:  </source>
         <translation>Уровень громкости: </translation>
     </message>
     <message>
-        <location filename="../frmsettings.ui" line="919"/>
+        <location filename="../frmsettings.ui" line="933"/>
         <source>Sound</source>
         <translation>Звук</translation>
     </message>
     <message>
-        <location filename="../frmsettings.ui" line="924"/>
-        <location filename="../frmsettings.ui" line="988"/>
-        <location filename="../frmsettings.ui" line="1063"/>
-        <location filename="../frmsettings.ui" line="1673"/>
+        <location filename="../frmsettings.ui" line="938"/>
+        <location filename="../frmsettings.ui" line="1002"/>
+        <location filename="../frmsettings.ui" line="1077"/>
+        <location filename="../frmsettings.ui" line="1687"/>
         <source>Enabled</source>
         <translation>Включено</translation>
     </message>
     <message>
-        <location filename="../frmsettings.ui" line="936"/>
+        <location filename="../frmsettings.ui" line="950"/>
         <source>OSD</source>
         <translation>OSD</translation>
     </message>
     <message>
-        <location filename="../frmsettings.ui" line="942"/>
+        <location filename="../frmsettings.ui" line="956"/>
         <source>Show OSD</source>
         <translation>Показывать OSD</translation>
     </message>
     <message>
-        <location filename="../frmsettings.ui" line="951"/>
+        <location filename="../frmsettings.ui" line="965"/>
         <source>OSD Font:  </source>
         <translation>Шрифт OSD:  </translation>
     </message>
     <message>
-        <location filename="../frmsettings.ui" line="963"/>
+        <location filename="../frmsettings.ui" line="977"/>
         <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
@@ -564,303 +578,308 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Используйте команду &lt;span style=&quot; font-weight:600;&quot;&gt;xfontsel -print&lt;/span&gt; для получения нового шрифта.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location filename="../frmsettings.ui" line="983"/>
+        <location filename="../frmsettings.ui" line="997"/>
         <source>OSD text</source>
         <translation>Текст OSD</translation>
     </message>
     <message>
-        <location filename="../frmsettings.ui" line="997"/>
+        <location filename="../frmsettings.ui" line="1011"/>
         <source>Popup messages</source>
         <translation>Всплывающие сообщения</translation>
     </message>
     <message>
-        <location filename="../frmsettings.ui" line="1003"/>
+        <location filename="../frmsettings.ui" line="1017"/>
         <source>Show popup messages</source>
         <translation>Показывать всплывающие сообщения</translation>
     </message>
     <message>
-        <location filename="../frmsettings.ui" line="1021"/>
+        <location filename="../frmsettings.ui" line="1035"/>
         <source>Popup expiration interval (in milliseconds)</source>
         <translation>Время показа всплывающего сообщения (в миллисекундах)</translation>
     </message>
     <message>
-        <location filename="../frmsettings.ui" line="1058"/>
+        <location filename="../frmsettings.ui" line="1072"/>
         <source>Popup message text</source>
         <translation>Текст всплывающего сообщения</translation>
     </message>
     <message>
-        <location filename="../frmsettings.ui" line="1079"/>
+        <location filename="../frmsettings.ui" line="1093"/>
         <source>Abbreviations</source>
         <translation>Сокращения</translation>
     </message>
     <message>
-        <location filename="../frmsettings.ui" line="1085"/>
+        <location filename="../frmsettings.ui" line="1099"/>
         <source>Ignore keyboard layout for abbreviations</source>
         <translation>Игнорировать раскладку для сокращений</translation>
     </message>
     <message>
-        <location filename="../frmsettings.ui" line="1093"/>
+        <location filename="../frmsettings.ui" line="1107"/>
         <source>Abbreviation</source>
         <translation>Сокращение</translation>
     </message>
     <message>
-        <location filename="../frmsettings.ui" line="1098"/>
+        <location filename="../frmsettings.ui" line="1112"/>
         <source>Expansion text</source>
         <translation>Полный текст</translation>
     </message>
     <message>
-        <location filename="../frmsettings.ui" line="1141"/>
-        <location filename="../frmsettings.ui" line="1643"/>
+        <location filename="../frmsettings.ui" line="1155"/>
+        <location filename="../frmsettings.ui" line="1657"/>
         <source>Log</source>
         <translation>Журнал</translation>
     </message>
     <message>
-        <location filename="../frmsettings.ui" line="1165"/>
+        <location filename="../frmsettings.ui" line="1179"/>
         <source>Enable keyboard logging</source>
         <translation>Включить сохранение набираемого текста в файл журнала</translation>
     </message>
     <message>
-        <location filename="../frmsettings.ui" line="1187"/>
+        <location filename="../frmsettings.ui" line="1201"/>
         <source>Log file size in bytes</source>
         <translation>Размер журнала в байтах</translation>
     </message>
     <message>
-        <location filename="../frmsettings.ui" line="1216"/>
+        <location filename="../frmsettings.ui" line="1230"/>
         <source>Send log to e-mail</source>
         <translation>Отправить журнал на e-mail</translation>
     </message>
     <message>
-        <location filename="../frmsettings.ui" line="1239"/>
+        <location filename="../frmsettings.ui" line="1253"/>
         <source>Send log via host (name or IP)</source>
         <translation>Отправить журнал через сервер (адрес или IP)</translation>
     </message>
     <message>
-        <location filename="../frmsettings.ui" line="1262"/>
+        <location filename="../frmsettings.ui" line="1276"/>
         <source>Send log via port</source>
         <translation>Отправить журнал через порт</translation>
     </message>
     <message>
-        <location filename="../frmsettings.ui" line="1294"/>
+        <location filename="../frmsettings.ui" line="1308"/>
         <source>Open log file in</source>
         <translation>Открывать файл журнала в </translation>
     </message>
     <message>
-        <location filename="../frmsettings.ui" line="1314"/>
+        <location filename="../frmsettings.ui" line="1328"/>
         <source>Open in browser</source>
         <translation>Открыть в браузере</translation>
     </message>
     <message>
-        <location filename="../frmsettings.ui" line="1319"/>
+        <location filename="../frmsettings.ui" line="1333"/>
         <source>Opening in the internal viewer</source>
         <translation>Открыть внутреней программой просмотра</translation>
     </message>
     <message>
-        <location filename="../frmsettings.ui" line="1327"/>
+        <location filename="../frmsettings.ui" line="1341"/>
         <source>View log...</source>
         <translation>Посмотреть журнал...</translation>
     </message>
     <message>
-        <location filename="../frmsettings.ui" line="1365"/>
+        <location filename="../frmsettings.ui" line="1379"/>
         <source>Troubleshooting</source>
         <translation>Устранение проблем</translation>
     </message>
     <message>
-        <location filename="../frmsettings.ui" line="1371"/>
+        <location filename="../frmsettings.ui" line="1385"/>
         <source>Don&apos;t switch layout if before input where pressed</source>
         <translation>Не переключать раскладку, если перед вводом были нажаты</translation>
     </message>
     <message>
-        <location filename="../frmsettings.ui" line="1379"/>
+        <location filename="../frmsettings.ui" line="1393"/>
         <source>Backspace</source>
         <translation>Backspace</translation>
     </message>
     <message>
-        <location filename="../frmsettings.ui" line="1386"/>
+        <location filename="../frmsettings.ui" line="1400"/>
         <source>Left arrow</source>
         <translation>Стрелка влево</translation>
     </message>
     <message>
-        <location filename="../frmsettings.ui" line="1393"/>
+        <location filename="../frmsettings.ui" line="1407"/>
         <source>Right arrow</source>
         <translation>Стрелка вправо</translation>
     </message>
     <message>
-        <location filename="../frmsettings.ui" line="1400"/>
+        <location filename="../frmsettings.ui" line="1414"/>
         <source>Up arrow</source>
         <translation>Стрелка вверх</translation>
     </message>
     <message>
-        <location filename="../frmsettings.ui" line="1407"/>
+        <location filename="../frmsettings.ui" line="1421"/>
         <source>Down arrow</source>
         <translation>Стрелка вниз</translation>
     </message>
     <message>
-        <location filename="../frmsettings.ui" line="1414"/>
+        <location filename="../frmsettings.ui" line="1428"/>
         <source>Delete</source>
         <translation>Delete</translation>
     </message>
     <message>
-        <location filename="../frmsettings.ui" line="1421"/>
+        <location filename="../frmsettings.ui" line="1435"/>
         <source>You changed layout</source>
         <translation>Вы переключили раскладку</translation>
     </message>
     <message>
-        <location filename="../frmsettings.ui" line="1428"/>
+        <location filename="../frmsettings.ui" line="1442"/>
         <source>Application in full screen mode</source>
         <translation>Приложение в полноэкранном режиме</translation>
     </message>
     <message>
-        <location filename="../frmsettings.ui" line="1435"/>
+        <location filename="../frmsettings.ui" line="1449"/>
         <source>This will help avoid switching layout when editing parts previously introduced word.</source>
         <translation>Это поможет избежать переключений раскладки при редактировании частей ранее введенного слова.</translation>
     </message>
     <message>
-        <location filename="../frmsettings.ui" line="1463"/>
+        <location filename="../frmsettings.ui" line="1477"/>
         <source>Additional</source>
         <translation>Дополнительно</translation>
     </message>
     <message>
-        <location filename="../frmsettings.ui" line="1471"/>
+        <location filename="../frmsettings.ui" line="1485"/>
         <source>Flush internal buffer on Escape</source>
         <translation>Сбрасывать внутренний буфер при нажатии Escape</translation>
     </message>
     <message>
-        <location filename="../frmsettings.ui" line="1478"/>
+        <location filename="../frmsettings.ui" line="1492"/>
         <source>Flush internal buffer on Enter or Tab</source>
         <translation>Сбрасывать внутренний буфер при нажатии Enter или Tab</translation>
     </message>
     <message>
-        <location filename="../frmsettings.ui" line="1485"/>
+        <location filename="../frmsettings.ui" line="1499"/>
         <source>Don&apos;t process words on Enter or Tab</source>
         <translation>Не проверять слово при нажатии Enter или Tab</translation>
     </message>
     <message>
-        <location filename="../frmsettings.ui" line="1492"/>
+        <location filename="../frmsettings.ui" line="1506"/>
         <source>Compatibility with the completion</source>
         <translation>Совместимость с автодополнением</translation>
     </message>
     <message>
-        <location filename="../frmsettings.ui" line="1504"/>
+        <location filename="../frmsettings.ui" line="1518"/>
         <source>Tracking input</source>
         <translation>Слежение за вводом</translation>
     </message>
     <message>
-        <location filename="../frmsettings.ui" line="1512"/>
+        <location filename="../frmsettings.ui" line="1526"/>
         <source>Monitor the input</source>
         <translation>Следить за вводом</translation>
     </message>
     <message>
-        <location filename="../frmsettings.ui" line="1519"/>
+        <location filename="../frmsettings.ui" line="1533"/>
         <source>Disabling this option will add any application to the list of excluded applications.</source>
         <translation>Выключение этой опции добавит ВСЕ приложения в список исключенных приложений.</translation>
     </message>
     <message>
-        <location filename="../frmsettings.ui" line="1526"/>
+        <location filename="../frmsettings.ui" line="1540"/>
         <source>Monitor the mouse</source>
         <translation>Следить за мышью</translation>
     </message>
     <message>
-        <location filename="../frmsettings.ui" line="1533"/>
+        <location filename="../frmsettings.ui" line="1547"/>
         <source>Disabling this option will disable mouse tracking. Reset buffer when clicking the mouse will not.</source>
         <translation>Выключение этой опции выключит слежение за мышью. Сброса буфера при клике мышью не будет.</translation>
     </message>
     <message>
-        <location filename="../frmsettings.ui" line="1565"/>
+        <location filename="../frmsettings.ui" line="1579"/>
         <source>Advanced</source>
         <translation>Специальное</translation>
     </message>
     <message>
-        <location filename="../frmsettings.ui" line="1580"/>
+        <location filename="../frmsettings.ui" line="1594"/>
         <source>Delay before sending events (in milliseconds)</source>
         <translation>Задержка перед отправкой событий (в миллисекундах)</translation>
     </message>
     <message>
-        <location filename="../frmsettings.ui" line="1600"/>
+        <location filename="../frmsettings.ui" line="1614"/>
         <source>Dont send KeyRelease even</source>
         <translation>Не отправлять событие KeyRelease</translation>
     </message>
     <message>
-        <location filename="../frmsettings.ui" line="1614"/>
+        <location filename="../frmsettings.ui" line="1628"/>
         <source>Log verbosity level</source>
         <translation>Уровень подробности выводимых сообщений</translation>
     </message>
     <message>
-        <location filename="../frmsettings.ui" line="1628"/>
+        <location filename="../frmsettings.ui" line="1642"/>
         <source>None</source>
         <translation>Отсутствует</translation>
     </message>
     <message>
-        <location filename="../frmsettings.ui" line="1633"/>
+        <location filename="../frmsettings.ui" line="1647"/>
         <source>Error</source>
         <translation>Ошибки</translation>
     </message>
     <message>
-        <location filename="../frmsettings.ui" line="1638"/>
+        <location filename="../frmsettings.ui" line="1652"/>
         <source>Warning</source>
         <translation>Предупреждения</translation>
     </message>
     <message>
-        <location filename="../frmsettings.ui" line="1648"/>
+        <location filename="../frmsettings.ui" line="1662"/>
         <source>Debug</source>
         <translation>Лог</translation>
     </message>
     <message>
-        <location filename="../frmsettings.ui" line="1653"/>
+        <location filename="../frmsettings.ui" line="1667"/>
         <source>Trace</source>
         <translation>Трассировка</translation>
     </message>
     <message>
-        <location filename="../frmsettings.ui" line="1666"/>
+        <location filename="../frmsettings.ui" line="1680"/>
         <source>Plugins</source>
         <translation>Модули</translation>
     </message>
     <message>
-        <location filename="../frmsettings.ui" line="1678"/>
+        <location filename="../frmsettings.ui" line="1692"/>
         <source>Description</source>
         <translation>Описание</translation>
     </message>
     <message>
-        <location filename="../frmsettings.ui" line="1683"/>
+        <location filename="../frmsettings.ui" line="1697"/>
         <source>File name</source>
         <translation>Имя файла</translation>
     </message>
     <message>
-        <location filename="../frmsettings.ui" line="1695"/>
+        <location filename="../frmsettings.ui" line="1709"/>
         <source>Properties</source>
         <translation>Параметры</translation>
     </message>
     <message>
-        <location filename="../frmsettings.ui" line="1701"/>
+        <location filename="../frmsettings.ui" line="1715"/>
         <source>Startup</source>
         <translation>Параметры запуска</translation>
     </message>
     <message>
-        <location filename="../frmsettings.ui" line="1709"/>
+        <location filename="../frmsettings.ui" line="1723"/>
         <source>Autostartup</source>
         <translation>Запускать автоматически при старте системы</translation>
     </message>
     <message>
-        <location filename="../frmsettings.ui" line="1724"/>
+        <location filename="../frmsettings.ui" line="1738"/>
         <source>Delay before startup</source>
         <translation>Задержка перед запуском</translation>
     </message>
     <message>
-        <location filename="../frmsettings.ui" line="1773"/>
+        <location filename="../frmsettings.ui" line="1787"/>
         <source>UI</source>
         <translation>Внешний вид</translation>
     </message>
     <message>
-        <location filename="../frmsettings.ui" line="1794"/>
+        <location filename="../frmsettings.ui" line="1808"/>
         <source>Show flag</source>
         <translation>Показывать флаг</translation>
     </message>
     <message>
-        <location filename="../frmsettings.ui" line="1799"/>
+        <location filename="../frmsettings.ui" line="1813"/>
+        <source>Show user flag</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../frmsettings.ui" line="1818"/>
         <source>Show text</source>
         <translation>Показывать текст</translation>
     </message>
     <message>
-        <location filename="../frmsettings.ui" line="1804"/>
+        <location filename="../frmsettings.ui" line="1823"/>
         <source>Show icon</source>
         <translation>Показывать значок</translation>
     </message>
@@ -881,27 +900,27 @@ p, li { white-space: pre-wrap; }
         <translation type="obsolete">Индикаторов приложений</translation>
     </message>
     <message>
-        <location filename="../frmsettings.ui" line="1815"/>
+        <location filename="../frmsettings.ui" line="1834"/>
         <source>Folder icon indicator</source>
         <translation>Каталог расположения используемых флагов</translation>
     </message>
     <message>
-        <location filename="../frmsettings.ui" line="1867"/>
+        <location filename="../frmsettings.ui" line="1886"/>
         <source>System</source>
         <translation>Системное</translation>
     </message>
     <message>
-        <location filename="../frmsettings.ui" line="1875"/>
+        <location filename="../frmsettings.ui" line="1894"/>
         <source>Keyboard properties command: </source>
         <translation>Команда запуска параметров клавиатуры: </translation>
     </message>
     <message>
-        <location filename="../frmsettings.ui" line="1882"/>
+        <location filename="../frmsettings.ui" line="1901"/>
         <source>/usr/bin/kcmshell4 --args=--tab=layouts kcm_keyboard</source>
         <translation>/usr/bin/kcmshell4 --args=--tab=layouts kcm_keyboard</translation>
     </message>
     <message>
-        <location filename="../frmsettings.ui" line="1896"/>
+        <location filename="../frmsettings.ui" line="1915"/>
         <source>Recover</source>
         <translation>Восстановить</translation>
     </message>
@@ -990,78 +1009,78 @@ p, li { white-space: pre-wrap; }
 <context>
     <name>kXneurApp::frmSettings</name>
     <message>
-        <location filename="../frmsettings.cpp" line="378"/>
+        <location filename="../frmsettings.cpp" line="379"/>
         <source>Select execute file</source>
         <translation>Выберите исполняемый файл</translation>
     </message>
     <message>
-        <location filename="../frmsettings.cpp" line="402"/>
+        <location filename="../frmsettings.cpp" line="403"/>
         <source>Select Directory with icon tray</source>
         <translation>Укажите каталог содержащий иконки для трея</translation>
     </message>
     <message>
-        <location filename="../frmsettings.cpp" line="466"/>
+        <location filename="../frmsettings.cpp" line="471"/>
         <source>You don&apos;t select abbreviation for remove.</source>
         <translation>Вы не выбрали какое сокращение необходимо удалить.</translation>
     </message>
     <message>
-        <location filename="../frmsettings.cpp" line="480"/>
+        <location filename="../frmsettings.cpp" line="485"/>
         <source>Description</source>
         <translation>Описание</translation>
     </message>
     <message>
-        <location filename="../frmsettings.cpp" line="481"/>
+        <location filename="../frmsettings.cpp" line="486"/>
         <source>Layout</source>
         <translation>Раскладка</translation>
     </message>
     <message>
-        <location filename="../frmsettings.cpp" line="482"/>
+        <location filename="../frmsettings.cpp" line="487"/>
         <source>Excluded</source>
         <translation>Включено</translation>
     </message>
     <message>
-        <location filename="../frmsettings.cpp" line="537"/>
+        <location filename="../frmsettings.cpp" line="542"/>
         <source>Nothing deleted</source>
         <translation>Нечего удалять</translation>
     </message>
     <message>
-        <location filename="../frmsettings.cpp" line="537"/>
+        <location filename="../frmsettings.cpp" line="542"/>
         <source>You don&apos;t select an application that must be removed</source>
         <translation>Вы не указали какие именно приложение необходимо удалить из списка</translation>
     </message>
     <message>
-        <location filename="../frmsettings.cpp" line="561"/>
+        <location filename="../frmsettings.cpp" line="566"/>
         <source>WAR: Don&apos;t select language!</source>
         <translation>WAR: Не выбран язык!</translation>
     </message>
     <message>
-        <location filename="../frmsettings.cpp" line="466"/>
-        <location filename="../frmsettings.cpp" line="562"/>
+        <location filename="../frmsettings.cpp" line="471"/>
+        <location filename="../frmsettings.cpp" line="567"/>
         <source>Warning....</source>
         <translation>Предупреждение...</translation>
     </message>
     <message>
-        <location filename="../frmsettings.cpp" line="372"/>
+        <location filename="../frmsettings.cpp" line="373"/>
         <source>Log file not found...</source>
         <translation>Файл журнала не найден...</translation>
     </message>
     <message>
-        <location filename="../frmsettings.cpp" line="372"/>
+        <location filename="../frmsettings.cpp" line="373"/>
         <source>Log file xneurlog.html not found. Maybe you do not have the option of logging!</source>
         <translation>Файл журнала xneur.html не найден. Возможно вы не включили опцию сохранения набираемого текста в журнал, проверьте настройки приложения!</translation>
     </message>
     <message>
-        <location filename="../frmsettings.cpp" line="562"/>
+        <location filename="../frmsettings.cpp" line="567"/>
         <source>You don&apos;t select lang</source>
         <translation>Вы не выбрали язык</translation>
     </message>
     <message>
-        <location filename="../frmsettings.cpp" line="989"/>
+        <location filename="../frmsettings.cpp" line="994"/>
         <source>Open File</source>
         <translation>Открыть файл</translation>
     </message>
     <message>
-        <location filename="../frmsettings.cpp" line="989"/>
+        <location filename="../frmsettings.cpp" line="994"/>
         <source>Audio ( *.wav)</source>
         <translation>Аудио (*.wav)</translation>
     </message>
@@ -1113,7 +1132,7 @@ and manually patch new configuration which will be created after first run.</sou
 <context>
     <name>kXneurApp::kXneurTray</name>
     <message>
-        <location filename="../kxneurtray.cpp" line="35"/>
+        <location filename="../kxneurtray.cpp" line="41"/>
         <source>Exit</source>
         <translation>Выйти</translation>
     </message>
@@ -1122,58 +1141,58 @@ and manually patch new configuration which will be created after first run.</sou
         <translation type="obsolete">О kXneur...</translation>
     </message>
     <message>
-        <location filename="../kxneurtray.cpp" line="38"/>
+        <location filename="../kxneurtray.cpp" line="44"/>
         <source>kdeNeur About...</source>
         <translation>О kdeNeur</translation>
     </message>
     <message>
-        <location filename="../kxneurtray.cpp" line="41"/>
+        <location filename="../kxneurtray.cpp" line="47"/>
         <source>Keyboard Properties...</source>
         <translation>Параметры клавиатуры...</translation>
     </message>
     <message>
-        <location filename="../kxneurtray.cpp" line="44"/>
+        <location filename="../kxneurtray.cpp" line="50"/>
         <source>Properties</source>
         <translation>Параметры</translation>
     </message>
     <message>
-        <location filename="../kxneurtray.cpp" line="47"/>
+        <location filename="../kxneurtray.cpp" line="53"/>
         <source>View log...</source>
         <translation>Посмотреть журнал...</translation>
     </message>
     <message>
-        <location filename="../kxneurtray.cpp" line="53"/>
+        <location filename="../kxneurtray.cpp" line="58"/>
         <source>User Action</source>
         <translation>Пользовательское действие</translation>
     </message>
     <message>
-        <location filename="../kxneurtray.cpp" line="62"/>
-        <location filename="../kxneurtray.cpp" line="231"/>
+        <location filename="../kxneurtray.cpp" line="67"/>
+        <location filename="../kxneurtray.cpp" line="255"/>
         <source>Start daemon</source>
         <translation>Запустить демон</translation>
     </message>
     <message>
-        <location filename="../kxneurtray.cpp" line="78"/>
+        <location filename="../kxneurtray.cpp" line="82"/>
         <source>X Neural Switcher running</source>
         <translation>X Neural Switcher работает</translation>
     </message>
     <message>
-        <location filename="../kxneurtray.cpp" line="154"/>
+        <location filename="../kxneurtray.cpp" line="179"/>
         <source>Log file not found...</source>
         <translation>Файл журнала не найден...</translation>
     </message>
     <message>
-        <location filename="../kxneurtray.cpp" line="154"/>
+        <location filename="../kxneurtray.cpp" line="179"/>
         <source>Log file xneurlog.html not found. Maybe you do not have the option of logging!</source>
         <translation>Файл журнала xneur.html не найден. Возможно вы не включили опцию сохранения набираемого текста в журнал, проверьте настройки приложения!</translation>
     </message>
     <message>
-        <location filename="../kxneurtray.cpp" line="210"/>
+        <location filename="../kxneurtray.cpp" line="235"/>
         <source>Error: Execute Actions</source>
         <translation>Ошибка: Выполнения пользовательского действия</translation>
     </message>
     <message>
-        <location filename="../kxneurtray.cpp" line="227"/>
+        <location filename="../kxneurtray.cpp" line="251"/>
         <source>Stop daemon</source>
         <translation>Остановить демон</translation>
     </message>
